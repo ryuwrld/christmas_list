@@ -58,7 +58,7 @@ export const giftItems = [
     {
         name: "a perfume",
         price: "TBA",
-        description: "if you decide to buy me one, pick at most 70ml (doesn't have to be expensive, zara has some nice ones)",
+        description: "if you decide to buy me one, pick at most 70ml (does not have to be expensive, zara has some nice ones)",
         image: "/images/perfume.png",
         position: "bottom-[30%] left-[40%] rotate-[2deg]"
     },
@@ -79,7 +79,7 @@ export const giftItems = [
     {
         name: "adidas gazelles",
         price: "£89.90**",
-        description: "ONLY get them if they're cheaper than that price, size 9.5 uk, dark colored ones similar to this picture",
+        description: "ONLY get them if theyre cheaper than that price, size 9.5 uk, dark colored ones similar to this picture",
         image: "/images/gazelles.png",
         position: "top-[60%] right-[10%] rotate-[-3deg]"
     }

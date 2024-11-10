@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image';
 import { useEffect, useState } from 'react'
 import { X } from 'lucide-react'
 import { Snowflake } from '@/components/Snowflake'
@@ -102,7 +103,7 @@ export default function Page() {
 
       <div className="container mx-auto px-4 py-8 h-full">
         <h1 className="text-2xl font-black mb-8 mt-12 text-center text-[#F4F4F9] z-10 lowercase">
-          ricardo's christmas wishlist 2024
+          ricardos christmas wishlist 2024
         </h1>
 
         <div className="relative w-full h-[calc(100vh-200px)] max-w-7xl mx-auto">
@@ -116,10 +117,10 @@ export default function Page() {
                   transition-transform duration-300 ease-in-out hover:scale-105 hover:rotate-2"
                 onClick={() => setSelectedItem(index)}
               >
-                <img
+                <image /
                   src={item.image}
-                  alt={item.name}
-                  className="w-full h-36 object-cover rounded-lg"
+                alt={item.name}
+                className="w-full h-36 object-cover rounded-lg"
                 />
               </div>
             </div>
@@ -136,11 +137,11 @@ export default function Page() {
         <div className="h-16 bg-[#F4F4F9] relative">
           {/* Christmas Tree */}
           <div className="absolute -top-[180%] left-[85%]">
-            <img
+            <image /
               src="/images/christmas_tree.gif"
-              alt="Christmas Tree"
-              className="h-32 w-auto object-contain"
-              draggable="false"
+            alt="Christmas Tree"
+            className="h-32 w-auto object-contain"
+            draggable="false"
             />
           </div>
         </div>
@@ -165,10 +166,10 @@ export default function Page() {
             >
               <X size={24} />
             </button>
-            <img
+            <image /
               src={giftItems[selectedItem].image}
-              alt={giftItems[selectedItem].name}
-              className="w-full h-64 object-contain rounded-lg mb-4"
+            alt={giftItems[selectedItem].name}
+            className="w-full h-64 object-contain rounded-lg mb-4"
             />
             <h3 className="text-2xl font-bold text-[#2E4A3E] mb-2 lowercase">
               {giftItems[selectedItem].name}
@@ -196,11 +197,11 @@ export default function Page() {
       {/* Hanging Minion */}
       <div className="absolute top-44 right-28 w-8">
         <div className="relative z-50">
-          <img
+          <image /
             src="/images/minions.png"
-            alt="Hanging Minion"
-            className="w-full h-auto object-contain select-none"
-            draggable="false"
+          alt="Hanging Minion"
+          className="w-full h-auto object-contain select-none"
+          draggable="false"
           />
         </div>
       </div>
