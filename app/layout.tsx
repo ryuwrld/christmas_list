@@ -6,7 +6,6 @@ const nunito = Nunito({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: "Joe's Christmas List - 2024",
-  description: 'A fun, minion-themed Christmas list',
 }
 
 export default function RootLayout({

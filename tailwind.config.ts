@@ -1,5 +1,6 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+import type { Config } from 'tailwindcss'
+
+const config: Config = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -7,8 +8,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        nunito: ['var(--font-nunito)'],
+      },
       animation: {
-        fall: 'fall 10s linear infinite',
+        fall: 'fall 15s linear infinite',
         twinkle: 'twinkle ease-in-out infinite alternate',
         fadeIn: 'fadeIn 0.2s ease-out',
         fadeOut: 'fadeOut 0.2s ease-out',
@@ -17,6 +21,8 @@ module.exports = {
         flyAcross: 'flyAcross 8s linear infinite',
         starTwinkle: 'starTwinkle 2s ease-in-out infinite',
         northStar: 'northStar 3s ease-in-out infinite',
+        aurora: 'aurora 25s ease infinite alternate',
+        auroraMove: 'auroraMove 60s ease infinite alternate',
       },
       keyframes: {
         fall: {
@@ -55,8 +61,19 @@ module.exports = {
           '0%, 100%': { opacity: 0.7, transform: 'scale(1)' },
           '50%': { opacity: 1, transform: 'scale(1.4)' },
         },
+        aurora: {
+          '0%': { transform: 'translate(-50%, -50%) rotate(0deg)' },
+          '100%': { transform: 'translate(-50%, -50%) rotate(360deg)' },
+        },
+        auroraMove: {
+          '0%': { transform: 'translateY(10%)' },
+          '50%': { transform: 'translateY(-10%)' },
+          '100%': { transform: 'translateY(10%)' },
+        },
       },
     },
   },
   plugins: [],
 }
+
+export default config

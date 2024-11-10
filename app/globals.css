@@ -19,7 +19,3 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
-
-.clip-tree {
-  clip-path: polygon(50% 0, 100% 100%, 0 100%);
-}
