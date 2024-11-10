@@ -30,8 +30,8 @@ const config: Config = {
           '100%': { transform: 'translateY(100vh)' },
         },
         twinkle: {
-          '0%, 100%': { opacity: 0.2 },
-          '50%': { opacity: 1 },
+          '0%, 100%': { opacity: '0.2' },
+          '50%': { opacity: '1' },
         },
         fadeIn: {
           '0%': { opacity: '0' },
@@ -54,12 +54,12 @@ const config: Config = {
           '100%': { transform: 'translateX(-240vw)' }
         },
         starTwinkle: {
-          '0%, 100%': { opacity: 0.4 },
-          '50%': { opacity: 1 },
+          '0%, 100%': { opacity: '0.4' },
+          '50%': { opacity: '1' },
         },
         northStar: {
-          '0%, 100%': { opacity: 0.7, transform: 'scale(1)' },
-          '50%': { opacity: 1, transform: 'scale(1.4)' },
+          '0%, 100%': { opacity: '0.7', transform: 'scale(1)' },
+          '50%': { opacity: '1', transform: 'scale(1.4)' },
         },
         aurora: {
           '0%': { transform: 'translate(-50%, -50%) rotate(0deg)' },
@@ -70,7 +70,7 @@ const config: Config = {
           '50%': { transform: 'translateY(-10%)' },
           '100%': { transform: 'translateY(10%)' },
         },
-      },
+      }
     },
   },
   plugins: [],

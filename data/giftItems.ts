@@ -4,83 +4,83 @@ export const giftItems = [
         price: "£34.90",
         description: "normal or soufflé - darkish color - code: 475381 / 469473",
         image: "/images/halfzip.png",
-        position: "top-[15%] left-[10%] rotate-[-5deg]"
+        position: { x: "15%", y: "20%", rotate: -5 }
     },
     {
         name: "book",
         price: "tba",
         description: "fopp should have some, if not all. choose only one! - 1. CRIME AND PUNISHMENT by Fyodor Dostoevsky - 2. THE TEMPLE OF THE GOLDEN PAVILION by Yukio Mishima - 3. LORD OF THE FLIES by William Golding - 4. NOTES FROM UNDERGROUND by Fyodor Dostoevsky - 5. DEMIAN by Hermann Hesse",
         image: "/images/book.png",
-        position: "top-[50%] right-[92%] rotate-[-3deg]"
+        position: { x: "45%", y: "15%", rotate: 3 }
     },
     {
         name: "uniqlo pleated pants",
         price: "£34.90",
         description: "womens* - beige - code: 473638",
         image: "/images/pleated.png",
-        position: "bottom-[75%] right-[20%] rotate-[3deg]"
+        position: { x: "75%", y: "25%", rotate: -3 }
     },
     {
         name: "screwdriver set",
         price: "£8.50",
         description: "https://www.aliexpress.com/item/1005006380671078.html",
         image: "/images/screwdriver.png",
-        position: "top-[20%] left-[30%] rotate-[1deg]"
+        position: { x: "25%", y: "40%", rotate: 4 }
     },
     {
         name: "uniqlo sweatpants",
         price: "£29.90",
-        description: "grey - code: 469934",
+        description: "grey - code: 469934 (other brands also fine)",
         image: "/images/sweatpants.png",
-        position: "top-[35%] right-[25%] rotate-[6deg]"
+        position: { x: "60%", y: "35%", rotate: -2 }
     },
     {
         name: "philips oneblade",
-        price: "£39.99",
-        description: "cheaper on black friday - https://www.amazon.co.uk/Philips-OneBlade-Original-Hybrid-Face/dp/B0CG6WXFCH",
+        price: "£34.99",
+        description: "probably cheaper on black friday",
         image: "/images/oneblade.png",
-        position: "bottom-[37%] left-[15%] rotate-[4deg]"
+        position: { x: "85%", y: "45%", rotate: 5 }
     },
     {
-        name: "uniqlo crew neck t shirt (U)",
+        name: "uniqlo t-shirt",
         price: "£14.90",
-        description: "CODE: 475356 - a nice t shirt (this one isnt the airism one, i head they shrink. but that ones fine too) you can choose color",
+        description: "you can choose color - size M/L - code: 475356 (this isnt the AIRISM code, I heard they shrink. (I THINK THEY DO ACTUALLY))",
         image: "/images/tshirt.png",
-        position: "bottom-[50%] right-[5%] rotate-[-6deg]"
+        position: { x: "35%", y: "55%", rotate: -4 }
     },
     {
         name: "slippers",
-        price: "£7.99",
-        description: "from amazon or something",
+        price: "£8.90",
+        description: "size 9.5 uk - amazon or primark",
         image: "/images/slippers.png",
-        position: "bottom-[15%] right-[30%] rotate-[-5deg]"
+        position: { x: "70%", y: "50%", rotate: 2 }
     },
     {
-        name: "a perfume",
+        name: "perfume",
         price: "TBA",
-        description: "if you decide to buy me one, pick at most 70ml (does not have to be expensive, zara has some nice ones)",
+        description: "you can choose, but dont get anything above 80ml / expensive one, even zara is fine",
         image: "/images/perfume.png",
-        position: "bottom-[30%] left-[40%] rotate-[2deg]"
+        position: { x: "15%", y: "65%", rotate: -3 }
     },
     {
-        name: "whey protein",
-        price: "£19.90",
-        description: "this one is a good deal right now on amazon, 1kg chocolate flavour",
+        name: "myprotein whey",
+        price: "£24.99",
+        description: "chocolate brownie - 1kg, probably cheaper on black friday",
         image: "/images/whey.png",
-        position: "bottom-[10%] left-[25%] rotate-[-2deg]"
+        position: { x: "55%", y: "63%", rotate: 4 }
     },
     {
-        name: "birkenstock arizona",
-        price: "£59.90**",
-        description: "ONLY get them at a decent price (below 70 80), size 9.5 uk, dark brown color",
+        name: "birkenstock boston",
+        price: "£90.00*",
+        description: "dogs will be out size - 9.5 - Dark Brown, only get it if you can find a good deal (below 90)",
         image: "/images/birks.png",
-        position: "bottom-[70%] left-[50%] rotate-[2deg]"
+        position: { x: "80%", y: "65%", rotate: -2 }
     },
     {
-        name: "adidas gazelles",
-        price: "£89.90**",
-        description: "ONLY get them if theyre cheaper than that price, size 9.5 uk, dark colored ones similar to this picture",
+        name: "adidas gazelle",
+        price: "£85.00*",
+        description: "dark color - size 9.5, only get it if you can find a good deal (below 85)",
         image: "/images/gazelles.png",
-        position: "top-[60%] right-[10%] rotate-[-3deg]"
+        position: { x: "45%", y: "40%", rotate: -3 }
     }
-]
+] 

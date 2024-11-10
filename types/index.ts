@@ -3,7 +3,11 @@ export interface GiftItem {
     price: string;
     description: string;
     image: string;
-    position: string;
+    position: {
+        x: string;
+        y: string;
+        rotate: number;
+    };
 }
 
 export interface SnowflakeStyle {

@@ -1,22 +1,26 @@
+import { useMemo } from 'react'
+
 export const Stars = () => {
-    const staticStars = [
-        { top: '15%', left: '25%', size: 5 },
-        // ... rest of your stars array
-    ];
+    const staticStars = useMemo(() => Array.from({ length: 25 }, () => ({
+        top: `${Math.random() * 80}%`,
+        left: `${Math.random() * 95}%`,
+        size: Math.random() > 0.8 ? 4 : Math.floor(Math.random() * 2) + 3,
+        delay: `${Math.random() * 3}s`
+    })), []);
 
     return (
         <div className="fixed inset-0 -z-5">
             {staticStars.map((star, index) => (
                 <div
-                    key={index}
-                    className={`absolute rounded-full bg-[#F4F4F9] ${star.size === 4 ? 'animate-northStar' : 'animate-starTwinkle'
-                        }`}
+                    key={`star-${index}-${star.top}-${star.left}`}
+                    className={`absolute rounded-full bg-[#F4F4F9] opacity-90
+                        ${star.size === 4 ? 'animate-northStar' : 'animate-starTwinkle'}`}
                     style={{
                         width: `${star.size}px`,
                         height: `${star.size}px`,
                         top: star.top,
                         left: star.left,
-                        animationDelay: `${index * 0.1}s`,
+                        animationDelay: star.delay,
                         filter: `blur(${star.size === 4 ? '1px' : '0.5px'})`
                     }}
                 >

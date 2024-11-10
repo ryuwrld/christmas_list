@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export const FlyingSanta = () => {
     const randomTop = Math.floor(Math.random() * 30) + 20;
 
@@ -6,9 +8,12 @@ export const FlyingSanta = () => {
             style={{ top: `${randomTop}%` }}
         >
             <div className="relative">
-                <img
+                <Image
                     src="/images/santa-sleigh.png"
                     alt="Santa's Sleigh"
+                    width={96}
+                    height={96}
+                    priority
                     className="w-24 h-auto transform -scale-x-100"
                 />
                 <div className="absolute top-1/2 right-0 w-20 h-2">
