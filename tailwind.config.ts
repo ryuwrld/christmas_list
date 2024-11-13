@@ -23,6 +23,7 @@ const config: Config = {
         northStar: 'northStar 3s ease-in-out infinite',
         aurora: 'aurora 25s ease infinite alternate',
         auroraMove: 'auroraMove 60s ease infinite alternate',
+        sparkleOut: 'sparkleOut 0.5s ease-out forwards',
       },
       keyframes: {
         fall: {
@@ -70,6 +71,16 @@ const config: Config = {
           '50%': { transform: 'translateY(-10%)' },
           '100%': { transform: 'translateY(10%)' },
         },
+        sparkleOut: {
+          '0%': {
+            transform: 'scale(0) rotate(0deg)',
+            opacity: '1'
+          },
+          '100%': {
+            transform: 'scale(1) rotate(180deg)',
+            opacity: '0'
+          }
+        }
       }
     },
   },

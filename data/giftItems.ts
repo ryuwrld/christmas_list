@@ -7,6 +7,20 @@ export const giftItems = [
         position: { x: "15%", y: "20%", rotate: -5 }
     },
     {
+        name: "gym clothes",
+        price: "tba",
+        description: "tshirt, shorts, sweatpants, thong",
+        image: "/images/gym.png",
+        position: { x: "60%", y: "15%", rotate: 3 }
+    },
+    {
+        name: "minye",
+        price: "1 gazillion dollars",
+        description: "minye",
+        image: "/images/minye.png",
+        position: { x: "30%", y: "20%", rotate: -2 }
+    },
+    {
         name: "book",
         price: "tba",
         description: "fopp should have some, if not all. choose only one! - 1. CRIME AND PUNISHMENT by Fyodor Dostoevsky - 2. THE TEMPLE OF THE GOLDEN PAVILION by Yukio Mishima - 3. LORD OF THE FLIES by William Golding - 4. NOTES FROM UNDERGROUND by Fyodor Dostoevsky - 5. DEMIAN by Hermann Hesse",
