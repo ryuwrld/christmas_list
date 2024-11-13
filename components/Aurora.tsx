@@ -1,4 +1,6 @@
-export const Aurora = () => {
+import { FC } from 'react'
+
+export const Aurora: FC = () => {
     return (
         <div className="fixed inset-0 overflow-hidden -z-5 opacity-30">
             <div className="absolute w-[150%] h-[150%] top-1/2 left-1/2 animate-aurora">

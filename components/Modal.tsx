@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, FC } from 'react'
 import Image from 'next/image'
 import { X } from 'lucide-react'
 import type { GiftItem } from '@/types'
@@ -9,7 +9,7 @@ interface ModalProps {
     onClose: () => void
 }
 
-export const Modal = ({ item, isClosing, onClose }: ModalProps) => {
+export const Modal: FC<ModalProps> = ({ item, isClosing, onClose }) => {
     const modalRef = useRef<HTMLDivElement>(null)
 
     useEffect(() => {

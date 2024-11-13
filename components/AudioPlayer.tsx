@@ -1,3 +1,4 @@
+import { FC } from 'react'
 import { useState, useEffect, useRef } from 'react'
 import { Volume2, VolumeX, Play, Pause, SkipForward } from 'lucide-react'
 
@@ -9,11 +10,11 @@ const SONGS = [
     '/sounds/rockin.mp3'
 ]
 
-export const AudioPlayer = () => {
-    const [isPlaying, setIsPlaying] = useState(false)
-    const [volume, setVolume] = useState(0.15)
-    const [currentSongIndex, setCurrentSongIndex] = useState(0)
-    const [isMuted, setIsMuted] = useState(false)
+export const AudioPlayer: FC = () => {
+    const [isPlaying, setIsPlaying] = useState<boolean>(false)
+    const [volume, setVolume] = useState<number>(0.2)
+    const [currentSongIndex, setCurrentSongIndex] = useState<number>(0)
+    const [isMuted, setIsMuted] = useState<boolean>(false)
     const audioRef = useRef<HTMLAudioElement | null>(null)
 
     useEffect(() => {

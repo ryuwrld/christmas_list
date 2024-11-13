@@ -1,4 +1,6 @@
-export const GiftEffect = () => {
+import { FC } from 'react'
+
+export const GiftEffect: FC = () => {
     return (
         <div className="absolute inset-0 pointer-events-none">
             <div className="relative w-full h-full">

@@ -1,4 +1,6 @@
-export const ChristmasLights = () => (
+import { FC } from 'react'
+
+export const ChristmasLights: FC = () => (
     <>
         {/* Top Lights */}
         <div className="fixed top-0 left-0 right-0 z-10">

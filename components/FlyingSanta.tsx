@@ -1,6 +1,7 @@
+import { FC } from 'react'
 import Image from 'next/image'
 
-export const FlyingSanta = () => {
+export const FlyingSanta: FC = () => {
     const randomTop = Math.floor(Math.random() * 30) + 20;
 
     return (

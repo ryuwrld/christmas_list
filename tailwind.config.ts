@@ -72,14 +72,8 @@ const config: Config = {
           '100%': { transform: 'translateY(10%)' },
         },
         sparkleOut: {
-          '0%': {
-            transform: 'scale(0) rotate(0deg)',
-            opacity: '1'
-          },
-          '100%': {
-            transform: 'scale(1) rotate(180deg)',
-            opacity: '0'
-          }
+          '0%': { transform: 'scale(0) rotate(0deg)', opacity: '1' },
+          '100%': { transform: 'scale(1) rotate(180deg)', opacity: '0' }
         }
       }
     },

@@ -1,6 +1,7 @@
+import { FC } from 'react'
 import { useMemo } from 'react'
 
-export const Stars = () => {
+export const Stars: FC = () => {
     const staticStars = useMemo(() => Array.from({ length: 25 }, () => ({
         top: `${Math.random() * 80}%`,
         left: `${Math.random() * 95}%`,
